@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <style>
+li  {
+  padding: 10px;
+  height: 100%;
+  position: relative;
+  border: none;
+  background-color: transparent;
+  padding-inline: 20px;
+}
+
+li:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: orangered;
+  transition: 0.5s;
+  
+}
+
+*{
+    font-family: "Cormorant Garamond";
+}
+
+li:hover::after {
+  width: 100%;
+}
+
+#bg
+{
+    background-image: url(../image/BG.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+    </style>
+</head>
+<body>
+    <div class=" container-xl flex justify-between items-center px-10 py-3 shadow-xl">
+        <nav class="">
+            <img src="../image/1 LOGO.png" alt="">
+        </nav>
+        <ul class="flex gap-10 relative cursor-pointer">
+            <li>Home</li>
+            <li>About</li>
+            <li>Shop</li>
+            <li>Blog</li>
+            <li>Contact</li>
+        </ul>
+
+        <ul class="flex  gap-10 cursor-pointer">
+            <li>WishList [0]</li>
+            <li>Cards [0]</li>
+        </ul>
+    </div>
+
+    <div class="container-xl h-[600px] px-20 pt-32" id="bg">
+        <h1 class="text-white text-5xl py-4">Denim Pants</h1>
+        <p class="text-white py-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae ullam, <br> numquam autem aliquam neque veritatis!</p>
+        <button class="px-5 border-2 py-2 my-4 bg-white border-white  ">Shop Collection</button>
+    </div>
+
+    <div class="container-xl">
+        <div class="row grid grid-cols-3 gap-4 py-4">
+            <div class="text-center relative">
+                <img src="../image/k3.png" alt="">
+                <div class="absolute bottom-10 ml-36 px-8 py-3 bg-white"> 
+                    <p class="text-3xl">For Men</p>
+                    <button class="text-black text-sm border-b-2 border-black py-2 px-2">Shop Now</button>
+                </div>
+            </div>
+            <div class="text-center relative">
+                <img src="../image/k1.png" alt="">
+                <div class="absolute bottom-10 ml-32 px-6 py-3 bg-white"> 
+                    <p class="text-3xl">For Women</p>
+                    <button class="text-black text-sm border-b-2 border-black py-2 px-2">Shop Now</button>
+                </div>
+            </div>
+            <div class="relative text-center">
+                <img src="../image/k2.png" alt="">
+                <div class="absolute bottom-10 ml-32 px-6 py-3 bg-white"> 
+                    <p class="text-3xl">Acceessories</p>
+                    <button class="text-black text-sm border-b-2 border-black py-2 px-2">Shop Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row grid-cols-4 flex justify-around items-center text-center py-14 px-40">
+            <div>
+                <i class="uil uil-shopping-bag text-3xl border px-1 "></i>
+                <p class="my-3">Book An Apointment</p>
+            </div>
+            <div>
+                <i class="uil uil-calendar-alt text-3xl border px-1"></i>
+                <p class="my-3">Pick Up In Store</p>
+            </div>
+            <div>
+                <i class="uil uil-gift text-3xl border px-1"></i>
+                <p class="my-3">Special Packaging</p>
+            </div>
+            <div>
+                <i class="uil uil-redo text-3xl border px-1"></i>
+                <p class="my-3">Free Globle Returns</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="conatiner-xl h-[500px]">
+        <p class="text-3xl px-28">Best Selling Item</p>
+        <div class="row grid grid-cols-4 gap-3 mx-28 my-6">
+        <div>
+            <img class="w-64 hover:shadow-xl" src="../image/Img.png" alt="">
+            <p class="text-xl">Dark Florish Onepiece</p>
+            <p class="text-xl text-blue-500">$95.00</p>
+        </div>
+        <div>
+            <img class="w-64 hover:shadow-xl" src="../image/img2.png" alt="">
+            <p class="text-xl">Dark Florish Onepiece</p>
+            <p class="text-xl text-blue-500">$95.00</p>
+        </div>
+        <div>
+            <img class="w-64 hover:shadow-xl" src="../image/img3.png" alt="">
+            <p class="text-xl">Buggy Shirt</p>
+            <p class="text-xl text-blue-500">$56.00</p>
+        </div>
+        <div>
+            <img class="w-64 hover:shadow-xl" src="../image/img4.png" alt="">
+            <p class="text-xl">Cottom off-white shirt</p>
+            <p class="text-xl text-blue-500">$65.00</p>
+        </div>
+        </div>
+    </div>
+
+    <div class="container-xl my-24">
+        <div class="row px-32">
+            <img src="../image/Video.png" alt="">
+        </div>
+    </div>
+
+    <div class="container-xl">
+        <div class="row grid grid-cols-2 mx-32 border-2 border-gray-400">
+            <img src="../image/Collection banner img.png" alt="">
+            <div class="p-12 justify-center">
+                <h1 class="text-3xl my-5">Classioc Winter Collection</h1>
+                <p class="text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima placeat blanditiis nam unde eligendi tenetur delectus illo atque, ipsa earum quidem dolores ipsum maxime, beatae, mollitia itaque quaerat cum provident? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, ratione!</p>
+                <button class="bg-black text-white px-8 py-3 my-4">SHOP COLLECTION</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-xl">
+        <div class="row my-20">
+            <p class="font-semibold text-center">WE LOVE GOOD COMPLIMENT </p>
+            <h1 class="text-center text-3xl py-8">" More than expected crazy soft,flexible
+                <br>and best fitted white simple denim
+                <br>shirt ""
+            </h1>
+            <p class="text-center text-[#bbb8b8] font-bold">Casual Way</p>
+        </div>
+    </div>
+
+    <div class="conatiner-xl h-[500px]">
+        <p class="text-3xl px-28">Our New Arrivals</p>
+        <div class="row grid grid-cols-4 gap-3 mx-28 my-6">
+        <div>
+            <img class="w-64 hover:shadow-xl" src="../image/s1.png" alt="">
+            <p class="text-xl">Handmade crop Sweater</p>
+            <p class="text-xl text-blue-500">$65.00</p>
+        </div>
+        <div>
+            <img class="w-64 hover:shadow-xl" src="../image/s2.png" alt="">
+            <p class="text-xl">Dark Florish Onepiece</p>
+            <p class="text-xl text-blue-500">$95.00</p>
+        </div>
+        <div>
+            <img class="w-64 hover:shadow-xl" src="../image/s3.png" alt="">
+            <p class="text-xl">Buggy Shirt</p>
+            <p class="text-xl text-blue-500">$56.00</p>
+        </div>
+        <div>
+            <img class="w-64 hover:shadow-xl" src="../image/s4.png" alt="">
+            <p class="text-xl">Cottom off-white shirt</p>
+            <p class="text-xl text-blue-500">$65.00</p>
+        </div>
+        </div>
+    </div>
+
+    <div class="conatiner-xl h-[500px]">
+        <p class="text-3xl px-28">You May Aslo Like</p>
+        <div class="row grid grid-cols-4 gap-3 mx-28 my-6">
+        <div>
+            <img class="w-64 hover:shadow-xl" src="../image/t1.png" alt="">
+            <p class="text-xl">Handmade crop Sweater</p>
+            <p class="text-xl text-blue-500">$65.00</p>
+        </div>
+        <div>
+            <img class="w-64 hover:shadow-xl" src="../image/t2.png" alt="">
+            <p class="text-xl">Dark Florish Onepiece</p>
+            <p class="text-xl text-blue-500">$95.00</p>
+        </div>
+        <div>
+            <img class="w-64 hover:shadow-xl" src="../image/t3.png" alt="">
+            <p class="text-xl">Buggy Shirt</p>
+            <p class="text-xl text-blue-500">$56.00</p>
+        </div>
+        <div>
+            <img class="w-64 hover:shadow-xl" src="../image/t4.png" alt="">
+            <p class="text-xl">Cottom off-white shirt</p>
+            <p class="text-xl text-blue-500">$65.00</p>
+        </div>
+        </div>
+    </div>
+
+    <div class="conatiner-xl h-[500px]">
+        <p class="text-3xl px-28">Read Blog Posts</p>
+        <div class="row grid grid-cols-3 gap-3 mx-28 mr-32 my-6">
+        <div>
+            <img class="w-96 hover:shadow-xl" src="../image/c1.png" alt="">
+            <p class="text-[#afadad] font-semibold py-1">FASHION / Jully 11 2022</p>
+            <p class="text-xl">How to Look Outstanding in Parsel</p>
+            <p class="text-md text-black">Lorem ipsum dolor sit amet consectetur adipisic elit. agni minima ullam animi.</p>
+        </div>
+        <div>
+            <img class="w-96 hover:shadow-xl" src="../image/c2.png" alt="">
+            <p class="text-[#afadad] font-semibold py-1">FASHION / Jun 21 2023</p>
+
+            <p class="text-xl">Top 10 Fashion, Trend for summer</p>
+            <p class="text-md text-black">Lorem ipsum dolor sit amet consectetur adipisic elit. agni minima ullam animi.</p>
+        </div>
+        <div>
+            <img class="w-96 hover:shadow-xl" src="../image/c3.png" alt="">
+            <p class="text-[#afadad] font-semibold py-1">FASHION / Jan 1 2024</p>
+
+            <p class="text-xl">Crazy Fashion With Unique Moment</p>
+            <p class="text-md text-black">Lorem ipsum dolor sit amet consectetur adipisic elit. agni minima ullam animi.</p>
+        </div>
+        </div>
+    </div>
+
+    <div class="container-xl"><hr>
+        <div class="row grid grid-cols-5 text-[#afaead] text-4xl py-5 px-20">
+            <div>JURRA</div>
+            <div>ALTRAS</div>
+            <div>SWANKY</div>
+            <div>VIOLET</div>
+            <div>STYLISH</div>
+        </div>
+        <hr>
+    </div>
+    <div class="container-xl">
+        <div class="row text-center">
+            <h1 class="text-3xl py-10 mt-10">Sign Up For Our Newsletter</h1>
+            <input class="border-2 border-black px-36 py-3 text-lg" type="email" name="" id="" placeholder="Your E-mail Address"><br>
+            <button class="bg-black text-white px-52 py-3 my-4">Sign Up</button>
+        </div>
+    </div>
+
+    <div class="container-xl py-20">
+        <div class="row grid grid-cols-6">
+            <div><img src="../image/g1.png" alt=""></div>
+            <div><img src="../image/g2.png" alt=""></div>
+            <div><img src="../image/g3.png" alt=""></div>
+            <div><img src="../image/g4.png" alt=""></div>
+            <div><img src="../image/g5.png" alt=""></div>
+            <div><img src="../image/g6.png" alt=""></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-xl">
+            <div class="row grid grid-cols-3 px-20">
+                <div>
+                    <img class="py-1" src="../image/1 LOGO.png" alt="">
+                    <p class="w-[80%]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis nulla, error eveniet ipsum aliquam quae accusamus voluptas illo iure debitis.</p>
+                    <div class="row grid grid-cols-5 w-[60%] py-2">
+                        <i class="uil uil-facebook-f p-2"></i>
+                        <i class="uil uil-instagram p-2"></i>
+                        <i class="uil uil-linkedin-alt p-2"></i>
+                        <i class="uil uil-twitter-alt p-2"></i>
+                        <img class="mt-4" src="../image/Vector.png" alt="">
+                    </div>
+                </div>
+                <div class="grid grid-cols-2"> 
+                    <dl>
+                        <dt class="text-2xl py-2">Quick Links</dt>
+                        <dd>Home</dd>
+                        <dd>About</dd>
+                        <dd>Services</dd>
+                        <dd>Single item</dd>
+                        <dd>Contact</dd>
+                    </dl>
+
+                    <dl>
+                        <dt class="text-2xl py-2">Helf & Info</dt>
+                        <dd>Track Your Order</dd>
+                        <dd>Retrun + Exchange</dd>
+                        <dd>Shoping + Delivery</dd>
+                        <dd>Contact Us</dd>
+                        <dd>Find Us Easy</dd>
+                    </dl>
+                </div>
+                <div>
+                    <h1 class="text-2xl py-2">Contact Us</h1>
+                    <p class="">Do you have any quesion & suggessions?</p>
+                    <p class="font-bold py-1">Yourinfo@gmail.com</p>
+                    <br>
+                    <p>Do you nedd support? Give us a call</p>
+                    <p class="font-bold py-1">+43 7447492839</p>
+                </div>
+            </div>
+            <hr>
+            <div><h1 class=" text-center py-4 text-xl">
+                @Copyright 2024 Denim. All rights reserved. Desgin by imjitu
+            </h1></div>
+        </div>
+    </footer>
+</body>
+</html>
